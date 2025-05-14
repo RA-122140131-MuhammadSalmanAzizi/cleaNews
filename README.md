@@ -20,7 +20,7 @@ Fitur unggulan:
 ### 1. Clone repository
 ```bash
 git clone https://github.com/username/cleanews.git
-cd newsverse
+cd cleanews
 ```
 
 ### 2. Install dependencies
