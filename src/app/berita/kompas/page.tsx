@@ -1,12 +1,13 @@
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
+import KompasClient from "./KompasClient";
 
-export default async function Home() {
+export default async function KompasPage() {
   const session = await getServerSession();
 
   if (!session) {
     redirect("/login");
-  } else {
-    redirect("/berita");
   }
+
+  return <KompasClient />;
 }
